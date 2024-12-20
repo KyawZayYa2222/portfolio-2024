@@ -14,15 +14,6 @@ export default function Loading({setAsLoaded}) {
       { opacity: 0 },
       { duration: 1 },
     )
-
-    // await animate(
-    //   "li",
-    //     {
-    //       opacity: 1,
-    //       duration: 1,
-    //       ease: 'easeInOut',
-    //     },
-    // )
     
     await animate(
       "li",
@@ -38,10 +29,10 @@ export default function Loading({setAsLoaded}) {
   }
 
   return (
-    <div className='absolute w-full h-screen'>
+    <div className='absolute z-50 w-full h-screen'>
       <div ref={scope} className='relative w-full h-full overflow-hidden'>
           <div id='loadingContent' className="absolute z-50 flex flex-col justify-center items-center w-full h-full">
-            <img src={loadingImg} alt="" width="260px"/>
+            <img src={loadingImg} alt="" width="240px"/>
             <div className='text-xl mt-2 text-white'>
               <LoadingCounter  afterCounting={loadingAnimation}/>
             </div>
