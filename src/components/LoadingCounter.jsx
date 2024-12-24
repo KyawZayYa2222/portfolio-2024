@@ -5,7 +5,7 @@ export default function LoadingCounter({afterCounting}) {
     <CountUp
     start={0}
     end={100}
-    duration={6}
+    duration={1}
     delay={.4}
     suffix='%'
     onEnd={afterCounting}

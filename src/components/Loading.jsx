@@ -33,8 +33,9 @@ export default function Loading({setAsLoaded}) {
       <div ref={scope} className='relative w-full h-full overflow-hidden'>
           <div id='loadingContent' className="absolute z-50 flex flex-col justify-center items-center w-full h-full">
             <img src={loadingImg} alt="" width="240px"/>
-            <div className='text-xl mt-2 text-white'>
-              <LoadingCounter  afterCounting={loadingAnimation}/>
+            {/* <p className='text-white'>Loading ..</p> */}
+            <div className='absolute bottom-4 right-4 text-3xl mt-2 text-white font-inter'>
+              <LoadingCounter afterCounting={loadingAnimation}/>
             </div>
           </div>
 
